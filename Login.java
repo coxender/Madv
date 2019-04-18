@@ -14,16 +14,17 @@ public class Login
         System.out.println("Welcome to MAdv!\n Please enter your ID:");
         Scanner scan = new Scanner(System.in);
         String username=scan.nextLine();
-        
+        username.toLowerCase();
+       
        switch(username){
             case "Nick":
-            MadvMain.main("Nick");
+            MadvMain.main("nick");
             break;
         case "luke":
             MadvMain.main("Luke");
             break;
         case "Chiara":
-            MadvMain.main("Chiara");
+            MadvMain.main("chiara");
             break;
         default:
         System.out.println("Incorrect username, please try again");
